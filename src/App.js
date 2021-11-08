@@ -3,8 +3,7 @@ import NavBar from "./components/navbar";
 import './App.css';
 import { Component } from 'react';
 
-let x = 0; 
-x = 1;
+
 class App extends Component {
 
   state={
