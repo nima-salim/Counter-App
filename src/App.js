@@ -3,6 +3,8 @@ import NavBar from "./components/navbar";
 import './App.css';
 import { Component } from 'react';
 
+let x = 0; 
+x = 1;
 class App extends Component {
 
   state={
@@ -23,6 +25,7 @@ handleReset=()=>{
  const counters = this.state.counters.map(counter => {counter.value = 0; return counter;});
  this.setState({counters});
 };
+
 handleIncrement = (counter) =>{
   const counters = [...this.state.counters];
   const index = counters.indexOf(counter);
